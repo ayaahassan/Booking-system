@@ -1,0 +1,23 @@
+<div class="col-lg-10 mx-auto">
+  <div class="card shadow">
+    <div class="card-header">
+      <h4 class="card-title">Booking Confirmation</h4>
+    </div>
+    <div class="card-body">
+      <h1>Greeting</h1>
+      <h3>Hello
+        <%= @customer.full_name %></h3>
+
+      <h3>Here is your booking id:
+        <%= @booking.order_number %>. This booking id is unique per order and will be required for
+        requesting refund in case you wish cancel the order</h3>
+
+      <p class="lead">Your Booking for
+        <strong><%= @workshop.name %></strong>
+        has been confirmed. Please find booking details below.
+      </p>
+
+      <%= @svg.html_safe %>
+    </div>
+  </div>
+</div>
